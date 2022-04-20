@@ -9,7 +9,7 @@ package ejercicio1;
  */
 public class Persona {
 
-	//Atributos de clase con modifcador de acceso private para que no accedaddirectamenta a ellos
+	//Atributos de clase con modifcador de acceso private para que no accedan directamente a ellos
 	public static final char H = 'H';
 	public static final char M = 'M';
 	private String nombre;

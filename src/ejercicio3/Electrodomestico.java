@@ -9,6 +9,7 @@ package ejercicio3;
  */
 public class Electrodomestico {
 
+	//Declaraciones de constantes
 	public static final char A = 'A';
 	public static final char F = 'F';
 	public static final char CONSUMO_DEFECTO = 'F';
@@ -16,11 +17,14 @@ public class Electrodomestico {
 	public static final float PESO_DEFECTO = 5;
 	public static final String COLORES[] = {"blanco","negro","rojo","azul","gris"};
 	public static final String COLOR_DEFECTO = "blanco";
+	
+	//Propiedades de clase
 	protected double precioBase;
 	protected String color;
 	protected char consumo;
 	protected float peso;
 	
+	//Constructor por defecto
 	public Electrodomestico() {
 		this.precioBase = PRECIO_DEFECTO;
 		this.color = COLOR_DEFECTO;
@@ -28,6 +32,7 @@ public class Electrodomestico {
 		this.peso = PESO_DEFECTO;
 	}
 	
+	//Constructor 2 parametros
 	public Electrodomestico(double precioBase, float peso) {
 		this.precioBase = precioBase;
 		this.peso = peso;
@@ -35,6 +40,7 @@ public class Electrodomestico {
 		this.consumo = CONSUMO_DEFECTO;
 	}
 
+	//Constructor todos los prarametros
 	public Electrodomestico(double precioBase, String color, char consumo, float peso) {
 		this.precioBase = precioBase;
 		this.color = color;
@@ -42,6 +48,7 @@ public class Electrodomestico {
 		this.peso = peso;
 	}
 
+	//Getters y Setters
 	public double getPrecioBase() {
 		return precioBase;
 	}
@@ -73,7 +80,5 @@ public class Electrodomestico {
 	public void setPeso(float peso) {
 		this.peso = peso;
 	}
-	
-	
 	
 }

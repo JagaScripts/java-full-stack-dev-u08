@@ -14,9 +14,11 @@ public class AppPassword {
 
 	public static void main(String[] args) {
 		
+		//Declaramos 2 objetos
 		Password passDefecto = new Password();
 		Password passGenerado = new Password(10);
 		
+		//Mostramos el funcionamiento
 		System.out.println("Un constructor por defecto " + passDefecto.getLongitud());
 		System.out.println("Un constructor con contraseña generada aleatoriamente " + passGenerado.getContrasena());
 
